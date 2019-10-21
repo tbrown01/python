@@ -27,13 +27,13 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 Python has five standard Data Types:
 
-- String
+- Strings
 - Numbers
-- List
-- Tuple
+- Lists
+- Tuples
 - Dictionary
 
-### String
+## Strings
 Create string variables by enclosing characters in quotes. Python uses single quotes ' double quotes " and triple quotes """ to denote literal strings. Only the triple quoted strings """ also will automatically continue across the end of line statement.
 
 ```
@@ -70,3 +70,28 @@ print(abc.upper())            # Outcome Variable abc will be: HELLO, WORLD!
 print(abc.lower())            # Outcome Variable abc will be: HELLO, WORLD!
 
 print(abc.replace("H", "J"))  # Outcome Variable abc will be: JELLO,WORLD!
+```
+## Numbers
+
+Python numbers variables are created by the standard Python method:
+```
+var = 382
+```
+Most of the time using the standard Python number type is fine. Python will automatically convert a number from one type to another if it needs. But, under certain circumstances that a specific number type is needed (ie. complex, hexidecimal), the format can be forced into a format by using additional syntax in the table below:
+```
+Type 	  	  	Format 	  	  Description
+int 	  	  	a = 10        Signed Integer
+long 	  	  	a = 345L 	    (L) Long integers, can be represented in octal and hexadecimal
+float 	      a = 45.67 	  (.) Floating point real values
+complex 	    a = 3.14J 	  (J) Contains integer in the range 0 to 255.
+```  	  	  	  	  	  	 
+Most of the time Python will do variable conversion automatically. You can also use Python conversion functions (int(), long(), float(), complex()) to convert data from one type to another. In addition, the type function returns information about how your data is stored within a variable.
+```
+message = "Good morning"
+num = 85
+pi = 3.14159
+
+print(type(message))  # This will return a string
+print(type(n))  # This will return an integer
+print(type(pi))  # This will return a float
+```
