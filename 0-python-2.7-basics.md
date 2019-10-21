@@ -23,3 +23,50 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> exit()
 ~]$ 
 ```
+## Data Types - Strings and Numbers
+
+Python has five standard Data Types:
+
+- String
+- Numbers
+- List
+- Tuple
+- Dictionary
+
+### String
+Create string variables by enclosing characters in quotes. Python uses single quotes ' double quotes " and triple quotes """ to denote literal strings. Only the triple quoted strings """ also will automatically continue across the end of line statement.
+
+```
+firstName = 'john'
+lastName = "smith"
+message = """This is a string that will span across multiple lines. Using newline characters
+and no spaces for the next lines. The end of lines within this string also count as a newline when printed"""
+```
+Strings can be accessed as a whole string, or a substring of the complete variable using brackets ‘[]’. Examples:
+```
+var1 = 'Hello World!'
+var2 = 'RhinoPython'
+
+print var1[0] # this will print the first character in the string an `H`
+print var2[1:5] # this will print the substring 'hinoP`
+```
+Python can use a special syntax to format multiple strings and numbers. The string formatter is quickly covered here because it is seen often and it is important to recognize the syntax.
+```
+print "The item {} is repeated {} times".format(element,count))
+```
+Python has a set of **built-in methods** that you can use on strings. **Note:** All string methods returns new values. They do not change the original string. Examples:
+
+**lower()** method returns the string in lower case
+
+**upper()** method returns the string in upper case
+
+**replace()** method replaces a string with another string
+
+```
+abc = "Hello, World!"
+
+print(abc.upper())            # Outcome Variable abc will be: HELLO, WORLD!
+
+print(abc.lower())            # Outcome Variable abc will be: HELLO, WORLD!
+
+print(abc.replace("H", "J"))  # Outcome Variable abc will be: JELLO,WORLD!
