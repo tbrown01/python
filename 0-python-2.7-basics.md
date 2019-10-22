@@ -78,13 +78,14 @@ Python numbers variables are created by the standard Python method:
 var = 382
 ```
 Most of the time using the standard Python number type is fine. Python will automatically convert a number from one type to another if it needs. But, under certain circumstances that a specific number type is needed (ie. complex, hexidecimal), the format can be forced into a format by using additional syntax in the table below:
-```
-Type 	  	  	Format 	  	  Description
-int 	  	  	a = 10        Signed Integer
-long 	  	  	a = 345L 	    (L) Long integers, can be represented in octal and hexadecimal
-float 	      a = 45.67 	  (.) Floating point real values
-complex 	    a = 3.14J 	  (J) Contains integer in the range 0 to 255.
-```  	  	  	  	  	  	 
+
+| Type | Format | Description |
+| ------------- | ------------- |
+| int  | a = 10 | Single Integer |
+| float  | a = 45.67 | . Floating Point Real Values |
+| long | a = 345L  | Can be Represented in Otcal & Hexadecimal |
+| complex | a = 3.14j | (J) Contains Integer in Range of 0 to 255 |
+ 	  	  	  	  	  	 
 Most of the time Python will do variable conversion automatically. You can also use Python conversion functions (int(), long(), float(), complex()) to convert data from one type to another. In addition, the type function returns information about how your data is stored within a variable.
 ```
 message = "Good morning"
